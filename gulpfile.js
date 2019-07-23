@@ -48,7 +48,7 @@ const scripts = done => {
 const brSync = done => {
   browserSync.init({
     server: {
-        baseDir: "./"
+        baseDir: "./dist"
     }
   })
   done()

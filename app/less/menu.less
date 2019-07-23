@@ -1,0 +1,25 @@
+.menu-list {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+
+  &__link {
+    color: @main-font-color;
+    text-decoration: none;
+    padding: 2px 11px 4px;
+
+    &:hover {
+      color: @second-font-color;
+      background-color: @third-bg-color;
+    }
+  }
+}

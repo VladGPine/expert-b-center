@@ -10,11 +10,12 @@
 
 * {
   box-sizing: border-box;
-}
-
-ul, li {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -22,9 +23,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @main-bg-color;
+  // background-color: @main-bg-color;
   font-family: @main-font;
 }
 
-// @import 'form.less';
+@import 'header.less';
+@import 'menu.less';
 // @import 'gallery.less';
