@@ -1,0 +1,30 @@
+/* styles reset */
+
+@import "node_modules/normalize.less/normalize.less";
+
+/* variables */
+
+@import 'variables.less';
+
+/* main styles */
+
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @main-bg-color;
+  font-family: @main-font;
+}
+
+// @import 'form.less';
+// @import 'gallery.less';
