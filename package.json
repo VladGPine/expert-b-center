@@ -22,7 +22,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-strip-comments": "^2.5.2",
     "gulp-watch": "^5.0.1",
-    "normalize.less": "^1.0.0"
+    "normalize.less": "^1.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-pug": "^4.0.1"
   },
   "browserslist": [
     "last 2 version"
@@ -38,7 +40,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VladGPine/gallery/issues"
+    "url": "https://github.com/VladGPine/expert-b-center/issues"
   },
   "homepage": "https://github.com/VladGPine/expert-b-center#readme"
 }
