@@ -1,0 +1,41 @@
+.partners {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: @main-font-color;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 152.9%;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+
+  &-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .partner {
+      width: 200px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+
+      &:first-child {
+        background-image: url('../img/region58-image-min.png');
+      }
+
+      &:nth-child(2) {
+        background-image: url('../img/cpc-image-min.png');
+      }
+
+      &:last-child {
+        background-image: url('../img/intelligence-service-image-min.png');
+      }
+    }
+  }
+}
