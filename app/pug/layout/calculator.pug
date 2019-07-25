@@ -1,2 +1,54 @@
 section.calculator
   h2.calculator__title Онлайн калькулятор стоимости месячного обслуживания
+  form.calculator-form
+    fieldset.fieldset
+      h3.fieldset__title Количество операций
+      label.fieldset__label 
+        input(class='fieldset__radio-btn' name='group-1' type='radio') 
+        .fieldset__text до 50 операций / до 5 человек
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-1' type='radio') 
+        .fieldset__text от 50 до 100 операций / до 15 человек
+    fieldset.fieldset 
+      h3.fieldset__title Система налогообложения
+      label.fieldset__label  
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text ЕНВД
+      label.fieldset__label  
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text ЕНВД+УСН
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text УСН 6%
+      label.fieldset__label  
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text УСН 15% (торговля, услуги)
+      label.fieldset__label  
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text УСН 15% (производство)
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text ОСН (торговля, услуги)
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-2' type='radio') 
+        .fieldset__text ОСН (производство)
+    fieldset.fieldset
+      h3.fieldset__title Организация
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-3' type='radio') 
+        .fieldset__text ИП (без сотрудников)
+      label.fieldset__label  
+        input(class='fieldset__radio-btn' name='group-3' type='radio') 
+        .fieldset__text ИП (с сотрудниками)
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-3' type='radio') 
+        .fieldset__text ООО
+      label.fieldset__label
+        input(class='fieldset__radio-btn' name='group-3' type='radio') 
+        .fieldset__text АО
+    fieldset.fieldset
+      p.fieldset__description Ориентировочная стоимость обслуживания составит 
+        strong.fieldset__description_strong 4000
+        |  руб. в месяц
+    fieldset.fieldset
+      button.fieldset__btn Узнать точную стоимость

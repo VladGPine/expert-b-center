@@ -97,6 +97,75 @@
     </section>
     <section class="calculator">
       <h2 class="calculator__title">Онлайн калькулятор стоимости месячного обслуживания</h2>
+      <form class="calculator-form">
+        <fieldset class="fieldset">
+          <h3 class="fieldset__title">Количество операций</h3>
+          <label class="fieldset__label"> 
+            <input class="fieldset__radio-btn" name="group-1" type="radio">
+            <div class="fieldset__text">до 50 операций / до 5 человек</div>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-1" type="radio">
+            <div class="fieldset__text">от 50 до 100 операций / до 15 человек</div>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset"> 
+          <h3 class="fieldset__title">Система налогообложения</h3>
+          <label class="fieldset__label"> 
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">ЕНВД</div>
+          </label>
+          <label class="fieldset__label"> 
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">ЕНВД+УСН</div>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">УСН 6%</div>
+          </label>
+          <label class="fieldset__label"> 
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">УСН 15% (торговля, услуги)</div>
+          </label>
+          <label class="fieldset__label"> 
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">УСН 15% (производство)</div>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">ОСН (торговля, услуги)</div>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-2" type="radio">
+            <div class="fieldset__text">ОСН (производство)</div>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="fieldset__title">Организация</h3>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-3" type="radio">
+            <div class="fieldset__text">ИП (без сотрудников)</div>
+          </label>
+          <label class="fieldset__label"> 
+            <input class="fieldset__radio-btn" name="group-3" type="radio">
+            <div class="fieldset__text">ИП (с сотрудниками)</div>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-3" type="radio">
+            <div class="fieldset__text">ООО</div>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__radio-btn" name="group-3" type="radio">
+            <div class="fieldset__text">АО</div>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset">
+          <p class="fieldset__description">Ориентировочная стоимость обслуживания составит <strong class="fieldset__description_strong">4000</strong> руб. в месяц</p>
+        </fieldset>
+        <fieldset class="fieldset">
+          <button class="fieldset__btn">Узнать точную стоимость</button>
+        </fieldset>
+      </form>
     </section>
   </body>
 </html>
