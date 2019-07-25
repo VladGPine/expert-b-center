@@ -7,8 +7,8 @@ const gulp = require('gulp'),
       cssnano = require('gulp-cssnano'),
       babel = require('gulp-babel'),
       strip = require('gulp-strip-comments'),
-      pug = require('gulp-pug')
-      // ghPages = require('gulp-gh-pages')
+      pug = require('gulp-pug'),
+      ghPages = require('gulp-gh-pages')
 
 const template = done => {
   gulp.src('app/pug/pages/*.pug')
@@ -61,20 +61,21 @@ const watch = done => {
   done()
 }
 
-// const deploy = done => {
-//   gulp.src('./dist/**/*')
-//     .pipe(ghPages({
-//       remoteUrl: 'https://github.com/VladGPine/expert-b-center',
-//       branch: 'gh-pages'
-//     }))
-//   done()
-// }
+const deploy = done => {
+  gulp.src('./dist/**/*')
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/VladGPine/expert-b-center',
+      branch: 'gh-pages'
+    }))
+  done()
+}
 
 gulp.task('watch', watch)
 gulp.task('pug', template)
 gulp.task('styles', styles)
 gulp.task('scripts', scripts)
 gulp.task('brSync', brSync)
+gulp.task('deploy', deploy)
 
 gulp.task('default', gulp.series(
   gulp.parallel('pug', 'styles', 'scripts'),
