@@ -77,19 +77,29 @@
           .sprite-thumb-image-min;
           margin-top: 3px;
           margin-left: 12px;
+
+          @media @mobile {
+            margin-left: 10px;
+          }
         }
 
         .benefit__title,
         .benefit__description {
           margin-left: 118px;
+
+          @media @mobile {
+            margin-left: 110px;
+          }
         }
 
         .benefit__title {
           margin-top: 29px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-top: 38px;
+          }
+
+          @media @tablet-s {
             margin-top: 46px;
           }
         }
@@ -104,19 +114,29 @@
         &::before {
           .sprite-piggybank-image-min;
           margin-left: 13px;
+
+          @media @mobile {
+            margin-left: 10px;
+          }
         }
 
         .benefit__title,
         .benefit__description {
           margin-left: 119px;
+
+          @media @mobile {
+            margin-left: 110px;
+          }
         }
 
         .benefit__title {
           margin-top: 26px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-top: 38px;
+          }
+
+          @media @tablet-s {
             margin-top: 42px;
           }
         }
@@ -138,19 +158,29 @@
         &::before {
           .sprite-support-image-min;
           margin-left: 16px;
+
+          @media @mobile {
+            margin-left: 10px;
+          }
         }
 
         .benefit__title,
         .benefit__description {
           margin-left: 123px;
+
+          @media @mobile {
+            margin-left: 110px;
+          }
         }
 
         .benefit__title {
           margin-top: 26px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-top: 38px;
+          }
+
+          @media  @tablet-s {
             margin-top: 42px;
           }
 
@@ -193,15 +223,21 @@
             margin-top: 0;
             margin-left: 14px;
           }
+
+          @media @mobile {
+            margin-left: 10px;
+          }
         }
 
         .benefit__title,
         .benefit__description {
           margin-left: 114px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-left: 110px;
+          }
+
+          @media @tablet-s {
             margin-left: 120px;
           }
         }
@@ -209,9 +245,11 @@
         .benefit__title {
           margin-top: 13px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-top: 38px;
+          }
+
+          @media @tablet-s {
             margin-top: 42px;
           }
         }
@@ -233,19 +271,29 @@
           @tablet-s {
             margin-top: 0;
           }
+
+          @media @mobile {
+            margin-left: 10px;
+          }
         }
 
         .benefit__title,
         .benefit__description {
           margin-left: 119px;
+
+          @media @mobile {
+            margin-left: 110px;
+          }
         }
 
         .benefit__title {
           margin-top: 13px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-top: 38px;
+          }
+
+          @media @tablet-s {
             margin-top: 42px;
           }
         }
@@ -256,6 +304,7 @@
       }
 
       &:last-child {
+
         &::before {
           .sprite-employees-image-min;
           margin-top: -13px;
@@ -266,19 +315,29 @@
           @tablet-s {
             margin-top: 0;
           }
+
+          @media @mobile {
+            margin-left: 10px;
+          }
         }
 
         .benefit__title,
         .benefit__description {
           margin-left: 124px;
+
+          @media @mobile {
+            margin-left: 108px;
+          }
         }
 
         .benefit__title {
           margin-top: 13px;
 
-          @media 
-          @mobile,
-          @tablet-s {
+          @media @mobile {
+            margin-top: 38px;
+          }
+
+          @media @tablet-s {
             margin-top: 42px;
           }
         }
@@ -296,8 +355,12 @@
         margin-left: 120px;
         margin-bottom: 13px;
 
+        @media @mobile {
+          font-size: 18px;
+          margin-left: 120px;
+        }
 
-        @media (max-width: 820px) {
+        @media (min-width: 481px) and (max-width: 820px) {
           font-size: 20px;
         }
       }
@@ -313,7 +376,11 @@
           margin-bottom: 46px;
         }
 
-        @media (max-width: 820px) {
+        @media @mobile {
+          font-size: 14px;
+        }
+
+        @media (min-width: 481px) and (max-width: 820px) {
           font-size: 16px;
         }
       }
