@@ -9,12 +9,10 @@
   @tablet-s,
   @tablet-l {
     position: absolute;
+    width: 100%;
     left: 0;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-around;
     background-color: @second-font-color;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-top: 83px;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
@@ -35,9 +33,8 @@
     @mobile,
     @tablet-s,
     @tablet-l {
-      margin-left: 90px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     &:first-child {
