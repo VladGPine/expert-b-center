@@ -19,10 +19,15 @@
   &-form {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 156px 210px 103px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-auto-flow: dense;
     margin-left: -2px;
+
+    @media (max-width: 625px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+    }
 
     .fieldset {
       width: 100%;
@@ -36,6 +41,11 @@
       }
 
       &:first-child {
+        padding-bottom: 33px;
+
+        @media (max-width: 926px) {
+          padding-right: 10px;         
+        }
 
         .fieldset__label {
 
@@ -77,6 +87,12 @@
         grid-column: 2;
         grid-row-start: 1;
         grid-row-end: 3;
+        padding-bottom: 33px;
+
+        @media (max-width: 625px) {
+          grid-column: 1;
+          grid-row-start: 2;
+        }
 
         .fieldset__label {
 
@@ -207,6 +223,8 @@
       }
 
       &:nth-child(3) {
+        padding-bottom: 23px;
+
         .fieldset__title,
         .fieldset__text {
           color: @main-font-color;
@@ -284,6 +302,17 @@
         }
       }
 
+      &:nth-child(4) {
+        padding-bottom: 19px;
+      }
+
+      &:last-child {
+
+        @media (max-width: 926px) {
+          padding: 0 26px;         
+        }
+      }
+
       &__title {
         color: @second-font-color;
         font-size: 22px;
@@ -292,6 +321,10 @@
         margin-top: 13px;
         margin-left: 65px;
         margin-bottom: 13px;
+
+        @media (max-width: 613px) {
+          font-size: 20px;        
+        }
       }
 
       &__label {
@@ -315,6 +348,10 @@
         font-weight: normal;
         line-height: 180%;
         cursor: pointer;
+
+        @media (max-width: 613px) {
+          font-size: 16px;        
+        }
 
         &::before,
         &::after {
@@ -368,6 +405,14 @@
         padding: 2px 56px 3px;
         margin: 32px 0 0 95px;
         cursor: pointer;
+
+        @media (max-width: 625px) {
+          margin: 44px auto;
+        }
+
+        @media (min-width: 626px) and (max-width: 1171px) {
+          margin: 44px auto 0;
+        }
       }
     }
   }
