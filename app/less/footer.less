@@ -5,6 +5,15 @@
   color: @second-font-color;
   background-color: @main-bg-color;
 
+  @media
+  @mobile,
+  @tablet-s,
+  @tablet-l,
+  @desktop-s {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   &__wrapper {
     max-width: 1200px;
     width: 100%;
@@ -24,6 +33,17 @@
 
   &-list {
     width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media
+    @mobile,
+    @tablet-s,
+    @tablet-l,
+    @desktop-s {
+      align-items: center;
+    }
 
     @media (max-width: 500px) {
       width: 100%;

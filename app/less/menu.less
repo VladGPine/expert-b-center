@@ -12,6 +12,7 @@
     width: 100%;
     left: 0;
     justify-content: space-around;
+    // align-items: flex-start;
     background-color: @second-font-color;
     margin-top: 83px;
     transform: translateX(-100%);
@@ -64,18 +65,11 @@
 }
 
 .burger-wrapper {
+  display: none;
   width: 25px;
   height: 15px;
   align-self: center;
   cursor: pointer;
-}
-
-.burger {
-  position: relative;
-  width: 25px;
-  height: 3px;
-  display: none;
-  background-color: @third-bg-color;
 
   @media 
   @mobile,
@@ -84,6 +78,13 @@
     display: block;
     order: 1;
   }
+}
+
+.burger {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: @third-bg-color;
 
   &::before {
     position: absolute;
