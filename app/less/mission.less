@@ -6,11 +6,20 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 1214px) {
+    width: 100%;
+    padding: 0 40px;
+  }
+
   &__wrapper {
     width: 100%;
     display: flex;
     margin-left: -2px;
     margin-bottom: 50px;
+
+    @media (max-width: 790px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
@@ -18,14 +27,20 @@
     font-size: 34px;
     font-weight: 500;
     line-height: 152.9%;
-    margin-top: 27px;
-    margin-bottom: 26px;
+    margin: 27px 0 26px;
+    text-align: center;
   }
 
   &__video {
     max-width: 790px;
     width: 100%;
+    height: auto;
     margin-right: 9px;
+
+    @media (max-width: 790px) {
+      height: 360px;
+      margin-right: 0;
+    }
   }
 
   &__description {
@@ -35,6 +50,11 @@
     font-size: 15px;
     font-weight: normal;
     line-height: 154.9%;
+
+    @media (max-width: 790px) {
+      max-width: 100%;
+      margin-top: 26px;
+    }
 
     &_first {
       margin-top: -7px;

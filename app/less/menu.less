@@ -4,6 +4,19 @@
   margin-top: 2px;
   margin-right: 10px;
 
+  @media 
+  @mobile,
+  @tablet-s,
+  @tablet-l {
+    display: none;
+  }
+
+  @media @desktop-s {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
   &__item {
     font-size: 14px;
     font-weight: 300;
@@ -11,6 +24,8 @@
 
     &:first-child {
       margin-right: 2px;
+
+     
     }
 
     &:nth-child(2),
@@ -32,5 +47,40 @@
     &_letters {
       margin-left: 4px;
     }
+  }
+}
+
+.burger {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  display: none;
+  align-self: center;
+  background-color: @third-bg-color;
+
+  @media 
+  @mobile,
+  @tablet-s,
+  @tablet-l {
+    display: block;
+    order: 1;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 3px;
+    top: -6px;
+    background-color: @third-bg-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 3px;
+    top: 6px;
+    background-color: @third-bg-color;
   }
 }

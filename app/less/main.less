@@ -4,10 +4,65 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media 
+  @mobile,
+  @tablet-s,
+  @tablet-l,
+  @desktop-s {
+    padding-bottom: 16vmax;
+  }
+
+  @media 
+  @mobile {
+    background-position-x: -500px;
+  }
+
+  @media @tablet-s {
+    background-position-x: -198px;
+  }
+
+  @media (min-width: 500px) and (max-width: 547px) {
+    background-position-x: -344px;
+  }
+
+  @media (min-width: 548px) and (max-width: 595px) {
+    background-position-x: -366px;
+  }
+
+  @media (min-width: 596px) and (max-width: 654px) {
+    background-position-x: -398px;
+  }
+
+  @media (min-width: 655px) and (max-width: 703px) {
+    background-position-x: -338px;
+  }
+
+  @media (min-width: 768px) and (max-width: 879px) {
+    background-position-x: -150px;
+  }
+
+  @media (min-width: 880px) and (max-width: 989px) {
+    background-position-x: -100px;
+  }
+
+  @media (min-width: 990px) and (max-width: 1100px) {
+    background-position-x: -50px;
+  }
+
   .wrapper {
     max-width: 1200px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+
+    @media 
+    @mobile,
+    @tablet-s,
+    @tablet-l,
+    @desktop-s {
+      padding-left: 40px;
+    }
   }
 
   &__title {
@@ -17,12 +72,45 @@
     font-size: 50px;
     font-weight: 400;
     line-height: 170%;
-    margin-top: 58px;
+    margin-top: 57px;
     margin-left: -2px;
     margin-bottom: 101px;
+
+    @media 
+    @mobile,
+    @tablet-s,
+    @tablet-l,
+    @desktop-s {
+      margin-top: 4.65vmax;
+      margin-bottom: 4vmax;
+    }
+
+    @media (min-width: 481px) and (max-width: 547px) {
+      width: 300px;
+      font-size: 30px;
+      margin-top: 2vmax;
+    }
+
+    @media (min-width: 548px) and (max-width: 595px) {
+      width: 300px;
+      font-size: 30px;
+      margin-top: 4vmax;
+    }
+
+    @media (min-width: 596px) and (max-width: 703px) {
+      width: 342px;
+      font-size: 34px;
+      margin-top: 9vmax;
+    }
+
+    @media (min-width: 704px) and (max-width: 800px) {
+      font-size: 40px;
+      margin-top: 8vmax;
+    }
   }
 
   &__btn {
+    width: 300px;
     color: @second-font-color;
     font-size: 26px;
     font-weight: 500;
@@ -30,9 +118,29 @@
     background-color: @second-bg-color;
     border: none;
     border-radius: 2px;
-    padding: 9px 84px;
+    padding: 9px 0;
     margin-left: 2px;
     margin-bottom: 221px;
     cursor: pointer;
+
+    @media 
+    @mobile,
+    @tablet-s,
+    @tablet-l,
+    @desktop-s {
+      margin-bottom: 0;
+    }
+
+    @media
+    @mobile,
+    (min-width: 481px) and (max-width: 595px) {
+      width: 160px;
+      font-size: 18px;
+    }
+
+    @media (min-width: 596px) and (max-width: 703px) {
+      width: 200px;
+      font-size: 22px;
+    }
   }
 }

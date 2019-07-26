@@ -3,8 +3,27 @@
   width: 100%;
   display: flex;
 
+  @media 
+  @mobile,
+  @tablet-s,
+  @tablet-l {
+    justify-content: space-around;
+  }
+
+  @media @desktop-s {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   &__logo {
     margin: 18px 0 16px;
+
+    @media 
+    @mobile,
+    @tablet-s,
+    @tablet-l {
+      order: 2;
+    }
   }
 
   &__callback {
@@ -12,5 +31,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media 
+    @mobile,
+    @tablet-s,
+    @tablet-l {
+      order: 3;
+    }
   }
 }

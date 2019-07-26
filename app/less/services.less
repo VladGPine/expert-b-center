@@ -1,5 +1,5 @@
 .services {
-  min-width: 1200px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,10 @@
   }
 
   &-list {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .service {
       position: relative;
@@ -23,7 +26,14 @@
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
-      border: 4px solid @second-font-color;  
+      border: 4px solid @second-font-color; 
+      
+      @media 
+      @mobile,
+      @tablet-s,
+      (max-width: 816px) {
+        width: 80%;
+      }
 
       &:first-child {
         background-image: 
@@ -74,6 +84,11 @@
 
         .service__title {
           margin-left: -1px;
+        }
+
+        @media (min-width: 817px) and (max-width: 1216px) {
+          max-width: 800px;
+          width: 100%;
         }
       }
 
