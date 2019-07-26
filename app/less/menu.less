@@ -8,7 +8,16 @@
   @mobile,
   @tablet-s,
   @tablet-l {
-    display: none;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: @second-font-color;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 83px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
   }
 
   @media @desktop-s {
@@ -21,6 +30,15 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
+
+    @media 
+    @mobile,
+    @tablet-s,
+    @tablet-l {
+      margin-left: 90px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
     &:first-child {
       margin-right: 2px;
@@ -48,12 +66,18 @@
   }
 }
 
+.burger-wrapper {
+  width: 25px;
+  height: 15px;
+  align-self: center;
+  cursor: pointer;
+}
+
 .burger {
   position: relative;
   width: 25px;
   height: 3px;
   display: none;
-  align-self: center;
   background-color: @third-bg-color;
 
   @media 
@@ -69,7 +93,7 @@
     content: '';
     width: 25px;
     height: 3px;
-    top: -6px;
+    top: 12px;
     background-color: @third-bg-color;
   }
 
@@ -80,5 +104,9 @@
     height: 3px;
     top: 6px;
     background-color: @third-bg-color;
-  }
+  }  
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
